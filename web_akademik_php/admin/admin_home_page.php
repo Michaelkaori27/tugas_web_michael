@@ -2,7 +2,7 @@
     session_start();
     if(!isset($_SESSION['logged-in']))
     {
-        header('Location: Index.php');
+        header('location: index.php');
     }
 ?>
 
@@ -28,8 +28,10 @@
         <div id="page-h" class="page-header">
             <div class="page-logo">
                 <img class="logo" src="../assets/image/stmik.png"/>
+            </div>
+            
             <a href="?page=dosen" ><i class="fa fa-user-o fa-icon" aria-hidden="true"></i> Daftar Dosen</a>
-            <a href="?page=Jadwal_mengajar"><i class="fa fa-calendar-o fa-Icon" aria-hidden="true"></I></I>Daftar Jadwal</a>
+            <a href="?page=jadwal_mengajar"><i class="fa fa-calendar-o fa-icon" aria-hidden="true"></i></i>Daftar Jadwal</a>
 
             <h3 class="menu-heading">Mahasiswa</h3>
             <a href="?page=mahasiswa"><i class="fa fa-user fa-icon" aria-hidden="true"></i>Daftar Mahasiswa</a> 

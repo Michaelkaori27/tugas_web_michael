@@ -18,12 +18,12 @@
         Data mahasiswa
     </div>
     <div class="button-container">
-        <button class="button-input" id="myBtn" onc;ick="show_modal(0)">
+        <button class="button-input" id="myBtn" onclick="show_modal(0)">
             <i class="fa fa-plus" aria-hidden="true"></i> Tambah Data 
         </button>
     </div>
     <table id="list-data" class="display">
-        <tread>
+        <thead>
             <tr>
                 <th><h5>NIM</h5></th>
                 <th><h5>Nama</h5></th>
@@ -32,7 +32,7 @@
                 <th><h5>Update</h5></th>
                 <th><h5>Delete</h5></th>
             </tr>
-        </tread>
+        </thead>
         <?php
             if (mysqli_num_rows($result) > 0) {
                 $i = 1;
@@ -98,9 +98,9 @@
 
 <!-- Modal untuk input data baru --> 
 <div id="myModal0" class="modal">
-    <!-- Modal content --> 
-    <div class="modal-content">
-        <div class="modal-header">
+  <!-- Modal content --> 
+  <div class="modal-content">
+    <div class="modal-header">
         <span class="close" id="close0">&times;</span>
         <h2>Tambah Data Mahasiswa</h2>
         <hr>
@@ -108,11 +108,11 @@
     <div class="modal-body">
         <form name="input" method="post" action="mahasiswa/mahasiswa_input.php">
         <label for="fnim">NIM</label>
-        <input type="text" id="fnim" name="nim" placholder="NIM" maxlength="9" required>
+        <input type="text" id="fnim" name="nim" placeholder="NIM" maxlength="9" required>
         <label for="fnama">Nama</label>
         <input type="text" id="fnama" name="nama" placeholder="Nama" pattern="[a-zA-Z]+" title="Masukan Hanya Huruf" required>
         <label for="ftingkat">Tingkat</label>
-        <input type="text" id="ftingkat" name="tingkat" placehorder="Tingkat" min=1 required>
+        <input type="text" id="ftingkat" list="tingkat" name="tingkat" placehorder="Tingkat" min=1 required>
             <datalist id="tingkat">
                 <option value="1">1</option>
                 <option value="2">2</option>

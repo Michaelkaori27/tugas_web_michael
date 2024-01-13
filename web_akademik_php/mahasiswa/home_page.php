@@ -29,7 +29,7 @@
     </head>
     <body>
     <div class="container">
-        <div class="page-h" class="page-header">
+        <div id="page-h" class="page-header">
             <div class="page-logo">
                 <img class="logo" src="../assets/image/stmik.png"/>
             </div>

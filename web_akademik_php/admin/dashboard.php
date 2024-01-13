@@ -46,7 +46,6 @@ if (mysqli_num_rows($ruangan) > 0) {
 <div class="item mahasiswa">
     <div class="icon-user">
         <i class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
-    </div>
 </div>
     <div class="data-user">
         <h3>Mahasiswa</h3>
